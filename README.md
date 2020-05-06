@@ -47,6 +47,7 @@ const counterReducer = (state = initState, action) => {
 ````
 
 The result can be console logged as in the picture shown <br/>
+
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/result.PNG)
 
 #### Step 4
