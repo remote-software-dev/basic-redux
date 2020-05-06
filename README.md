@@ -7,9 +7,8 @@ In the nutshell, what I understand redux has to have <br/>
 3. Reducer to update the state.<br/>
 Be sure to install react-redux, redux library first by
 `npm i react-redux redux --save`<br/>
-There are two repos here, 
-- master and 
-- refactoring
+
+There are two repos here, **master** and **refactoring**
 
 ### Steps
 #### Step 1
