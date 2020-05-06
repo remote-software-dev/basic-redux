@@ -8,6 +8,11 @@ In the nutshell, what I understand redux has to have <br/>
 
 ## Steps
 #### Step 1
+- create store where reducer is passed as argument
 
-Here is the result
+````javascript
+
+const store = createStore(counterReducer);
+````
+The result can be console logged as in the picture shown 
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/result.PNG)
