@@ -2,17 +2,21 @@
 
 This repo was meant to be as simple redux as possible for learning purpose only. There are two branch on this repo, First is the **master** and the **refactored** branch. I supposed that we understand the theoretical concept already.<br/>
 In the nutshell, what I understand redux has to have <br/>
-1. global store, 
-2. actions which is plain java object and 
-3. reducer to update the state.<br/>
+1. Global store, 
+2. Actions which is plain java object then dispatch them and 
+3. Reducer to update the state.<br/>
 
 ## Steps
 #### Step 1
 - create store where reducer is passed as argument
 
 ````javascript
-
 const store = createStore(counterReducer);
+````
+#### Step 2
+````javascript
+store.dispatch({ type: 'INCREMENT' });
+store.dispatch({ type: 'DECREMENT' });
 ````
 The result can be console logged as in the picture shown 
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/result.PNG)
