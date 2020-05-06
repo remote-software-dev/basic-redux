@@ -59,3 +59,17 @@ const mapStateToProps = (state) => {
   }
 }
 ````
+- Also we want to have function available in our `App.js`, so we map it as props
+````javascript
+const mapDispatchToProps = (dispatch) => {
+  return {
+    increment: () => {
+      dispatch(INCREMENT);
+    },
+
+    decrement: () => {
+      dispatch(DECREMENT);
+    }
+  }
+}
+````
