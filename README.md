@@ -77,4 +77,15 @@ const mapDispatchToProps = (dispatch) => {
 ````javascript
 export default connect(mapStateToProps, mapDispatchToProps)(App);
 ````
+When we `npm start` the app, we get visualization as shown. Just pass
+`window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()`
+in the index.js file
+
+````javascript
+const store = createStore(
+  counterReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+````
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/redux-devtool.PNG)
