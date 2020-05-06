@@ -8,15 +8,17 @@ In the nutshell, what I understand redux has to have <br/>
 
 ## Steps
 #### Step 1
-- create store where reducer is passed as argument
+- Create store where reducer is passed as argument
 
 ````javascript
 const store = createStore(counterReducer);
 ````
 #### Step 2
+- Define the actions as object, and passed as an argument in the dispatch function 
 ````javascript
 store.dispatch({ type: 'INCREMENT' });
 store.dispatch({ type: 'DECREMENT' });
 ````
+#### Step 3
 The result can be console logged as in the picture shown 
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/result.PNG)
