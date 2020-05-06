@@ -1,5 +1,8 @@
 This repo was meant to be as simple redux as possible for learning purpose only. There are two branch on this repo, First is the **master** and the **refactored** branch. I supposed that we understand the theoretical concept already.<br/>
-In the nutshell, what I understand redux is as<br/>
+In the nutshell, what I understand redux has to have <br/>
+1. global store, 
+2. actions which is plain java object and 
+3. reducer to update the state.<br/>
 
 ## Available Scripts
 
