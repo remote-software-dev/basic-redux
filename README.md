@@ -1,4 +1,4 @@
-
+This repo was meant to be as simple redux as possible for learning purpose only. 
 ## Available Scripts
 
 Here is the result
