@@ -2,46 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
 import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
-const initState = {
-  count: 0
-}
+import counterReducer from './store/reducers/counterReducer';
 
-const counterReducer = (state = initState, action) => {
-  switch (action.type) {
-    case 'INCREMENT':
-      return {
-        count: state.count + 1
-      }
-
-    case 'DECREMENT':
-      return {
-        count: state.count - 1
-      }
-
-    default:
-      return state
-  }
-}
-
-const store = createStore(counterReducer);
-console.log(store.getState());
-
-//take some actions (increment, decrement)
-store.dispatch({ type: 'INCREMENT' });
-console.log(store.getState());
-
-store.dispatch({ type: 'DECREMENT' });
-console.log(store.getState());
+const store = createStore(
+  counterReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
 

@@ -1,15 +1,35 @@
 import React from 'react';
 import './App.css';
+import { connect } from 'react-redux';
+import { INCREMENT, DECREMENT } from './store/actions/counterActions';
 
-function App() {
+const App = (props) => {
   return (
     <div className="App">
-      <h3>
-        Learning Basic Redux with React
-      </h3>  
-   </div>
+      <h1>Learn React Redux Counter</h1>
+      <h3>Count: {props.counter}</h3>
+      <button onClick={props.increment}>+</button>
+      <button onClick={props.decrement}>-</button>
+    </div>
   );
 }
 
-export default App;
-  
+const mapStateToProps = (state) => {
+  return {
+    counter: state.count
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    increment: () => {
+      dispatch(INCREMENT);
+    },
+
+    decrement: () => {
+      dispatch(DECREMENT);
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
