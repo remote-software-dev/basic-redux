@@ -46,5 +46,10 @@ const counterReducer = (state = initState, action) => {
 }
 ````
 
-The result can be console logged as in the picture shown 
+The result can be console logged as in the picture shown <br/>
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/result.PNG)
+
+Now, let's us use App component, and pass the data as props. In the App.js
+````javascript
+yadda
+````
