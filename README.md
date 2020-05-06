@@ -6,7 +6,7 @@ In the nutshell, what I understand redux has to have <br/>
 2. Actions which is plain java object then dispatch them and 
 3. Reducer to update the state.<br/>
 
-## Steps
+### Steps
 #### Step 1
 - Create store where reducer is passed as argument
 
