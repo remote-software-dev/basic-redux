@@ -92,3 +92,4 @@ const store = createStore(
 - Practically, we are done. But, to make it more professional, normally for real life application, the app's file structure will be placed separately based on their functionality. So let's refactor it
 
 #### Step 5 Refactoring
+This step is a no-brainer activities, simply follow the file structure on the **refactoring branch**
