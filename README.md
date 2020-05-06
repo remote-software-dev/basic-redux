@@ -72,7 +72,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 ````
-And Here is what the `App.js` looks like
+And here is what the `App.js` looks like
 ```javascript
 const App = (props) => {
   return (
