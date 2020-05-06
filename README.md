@@ -94,3 +94,5 @@ const store = createStore(
 This step is a no-brainer activities, simply follow the file structure on the **refactoring branch**
 
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/file-structure.PNG)
+
+That's all, Mate... Happy Coding
