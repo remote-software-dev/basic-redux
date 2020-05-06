@@ -89,3 +89,6 @@ const store = createStore(
 
 ````
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/redux-devtool.PNG)
+- Practically, we are done. But, to make it more professional, normally for real life application, the app's file structure will be placed separately based on their functionality. So let's refactor it
+
+#### Step 5 Refactoring
