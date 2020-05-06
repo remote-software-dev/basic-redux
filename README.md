@@ -6,7 +6,7 @@ In the nutshell, what I understand redux has to have <br/>
 2. Actions which is plain java object then dispatch them and 
 3. Reducer to update the state.<br/>
 Be sure to install react-redux, redux library first by
-`npm i react-redux redux --save`
+`npm i react-redux redux --save`<br/>
 There are two repos here, 
 - master and 
 - refactoring
