@@ -77,3 +77,4 @@ const mapDispatchToProps = (dispatch) => {
 ````javascript
 export default connect(mapStateToProps, mapDispatchToProps)(App);
 ````
+![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/redux-devtool.PNG)
