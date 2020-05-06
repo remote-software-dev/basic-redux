@@ -50,7 +50,7 @@ The result can be console logged as in the picture shown <br/>
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/result.PNG)
 
 #### Step 4
-- Now, let's us use App component, and pass the data as props. In the App.js. but before that, we need to data available in the `App.js` component by connect it to store
+- Now, let's us use App component, and pass the data as props. In the App.js. but before that, we need to data available in the `App.js` component by using ***Higher Order component*** function which is ~connect~ it to store
 ````javascript
 yadda
 ````
