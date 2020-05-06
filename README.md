@@ -20,5 +20,31 @@ store.dispatch({ type: 'INCREMENT' });
 store.dispatch({ type: 'DECREMENT' });
 ````
 #### Step 3
+- Tell reducer to take the action of updating
+
+````javascript
+const initState = {
+  count: 0
+}
+
+const counterReducer = (state = initState, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return {
+        count: state.count + 1
+      }
+
+    case 'DECREMENT':
+      return {
+        count: state.count - 1
+      }
+
+    default:
+      return state
+
+  }
+}
+````
+
 The result can be console logged as in the picture shown 
 ![Alt text](https://github.com/remote-software-dev/basic-redux/blob/master/public/result.PNG)
