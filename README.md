@@ -76,6 +76,10 @@ const mapDispatchToProps = (dispatch) => {
 ````javascript
 export default connect(mapStateToProps, mapDispatchToProps)(App);
 ````
+Here is what the `App.js`` looks like
+```javascript
+yadda
+```
 When we `npm start` the app, we get visualization as shown. Just pass
 `window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()`
 in the index.js file
