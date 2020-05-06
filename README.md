@@ -78,7 +78,16 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 ````
 Here is what the `App.js`` looks like
 ```javascript
-yadda
+const App = (props) => {
+  return (
+    <div className="App">
+      <h1>Learn React Redux Counter</h1>
+      <h3>Count: {props.counter}</h3>
+      <button onClick={props.increment}>+</button>
+      <button onClick={props.decrement}>-</button>
+    </div>
+  );
+}
 ```
 When we `npm start` the app, we get visualization as shown. Just pass
 `window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()`
