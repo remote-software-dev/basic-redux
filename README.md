@@ -73,3 +73,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 ````
+- Finally, we wrap our App component with ***connect*** function where we pass `mapStateToProps` and `mapDispatchToProps`
+````javascript
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+````
