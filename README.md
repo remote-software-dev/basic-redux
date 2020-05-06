@@ -1,4 +1,4 @@
-This repo was meant to be as simple redux as possible for learning purpose only. There are two branch on this repo, First is the **master** and the **refactored** branch. I supposed that we understand the theoretical concept alrady.
+This repo was meant to be as simple redux as possible for learning purpose only. There are two branch on this repo, First is the **master** and the **refactored** branch. I supposed that we understand the theoretical concept already.<br/>
 In the nutshell, what I understand redux is as<br/>
 
 ## Available Scripts
