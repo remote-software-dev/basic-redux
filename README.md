@@ -72,11 +72,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 ````
-- Finally, we wrap our App component with ***connect*** function where we pass `mapStateToProps` and `mapDispatchToProps`
-````javascript
-export default connect(mapStateToProps, mapDispatchToProps)(App);
-````
-Here is what the `App.js`` looks like
+And Here is what the `App.js` looks like
 ```javascript
 const App = (props) => {
   return (
@@ -89,6 +85,10 @@ const App = (props) => {
   );
 }
 ```
+- Finally, we wrap our App component with ***connect*** function where we pass `mapStateToProps` and `mapDispatchToProps`
+````javascript
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+````
 When we `npm start` the app, we get visualization as shown. Just pass
 `window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()`
 in the index.js file
